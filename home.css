@@ -21,7 +21,7 @@ body {
   background: url(images/band.webp);
   background-repeat: no-repeat;
   background-size: 100%;
-  row-gap: 10px;
+  row-gap: 30px;
 }
 
 .container-top {
@@ -103,7 +103,7 @@ body {
 }
 
 .bands-head {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
   display: grid;
   row-gap: 20px;
@@ -123,7 +123,8 @@ body {
 
 .band-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
   gap: 20px;
 }
 
@@ -132,23 +133,84 @@ body {
   grid-template-rows: 5fr 3fr 1fr;
   place-items: center;
   text-align: center;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.226);
-  border-radius: 20px;
-  row-gap: 40px;
-  font-size: 20px;
+  box-shadow: 0.5px 0.5px 15px rgb(85, 85, 85);
+  font-size: 18px;
+  border-radius: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .band-name {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .band-image {
   width: 100%;
-  border-radius: 5%;
+  object-fit: cover;
+  align-self: start;
 }
 
 .card-description {
   align-self: start;
+  padding: 20px;
+}
+
+.call-action {
+  text-align: center;
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  max-width: 60%;
+  justify-self: center;
+  grid-template-rows: auto 1fr auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: calc(15px + 1vw);
+}
+
+.call-action a,
+button {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.call-action button:hover {
+  background-color: white;
+  color: rgb(230, 1, 1);
+}
+
+.call-action-heading {
+  font-size: calc(10px + 3vw);
+  color: rgb(230, 1, 1);
+}
+
+.call-action-button {
+  color: white;
+  background-color: rgb(230, 1, 1);
+  border: 4px rgb(230, 1, 1) solid;
+  font-size: larger;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.border {
+  border: 2px white solid;
+  padding: 20px;
+}
+
+.footer {
+  gap: 20px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+  padding: 60px 0px 0px 0px;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
