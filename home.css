@@ -24,11 +24,8 @@ body {
   row-gap: 10px;
 }
 
-.container>div {
-  padding: 10px 50px;
-}
-
 .container-top {
+  padding: 50px 10px;
   display: grid;
   grid-template-rows: auto 1fr 1em;
   row-gap: 120px;
@@ -55,7 +52,7 @@ body {
 }
 
 .intro-slogan {
-  font-size: 30px;
+  font-size: calc(10px + 2vw);
 }
 
 .head {
@@ -92,8 +89,8 @@ body {
 }
 
 .main {
+  padding: 10px 100px;
   display: grid;
-  padding: 50px 10px;
   color: white;
 }
 
@@ -134,7 +131,7 @@ body {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.226);
   border-radius: 20px;
-  row-gap: 20px;
+  row-gap: 40px;
   font-size: 20px;
 }
 
