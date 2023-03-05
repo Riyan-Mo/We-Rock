@@ -73,10 +73,13 @@ body {
 
 .nav-bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  column-gap: 40px;
+  padding: 0px 20px;
   flex: auto;
-  font-size: calc(7px + 2vw);
+  font-size: calc(5px + 2vw);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 100;
 }
 
 .nav-bar a {
@@ -120,15 +123,16 @@ body {
 
 .band-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
 }
 
 .card {
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 5fr 3fr 1fr;
   place-items: center;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   background-color: rgba(255, 255, 255, 0.226);
   border-radius: 20px;
   row-gap: 40px;
@@ -138,4 +142,13 @@ body {
 .band-name {
   font-size: 28px;
   font-weight: bold;
+}
+
+.band-image {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.card-description {
+  align-self: start;
 }
