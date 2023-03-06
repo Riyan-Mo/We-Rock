@@ -1,65 +1,14 @@
-:root {
-  --backgroundColor: rgb(248, 248, 248);
-  --fontColor: black;
-}
-
-body {
-  background-color: var(--backgroundColor);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.container {
+.main-form {
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  padding: 30px;
-}
-
-.nav-bar {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
-  justify-content: center;
+  color: white;
+  font-size: calc(5px + 2vw);
+  text-align: center;
   align-items: center;
-  text-align: center;
-  font-size: 25px;
-  font-weight: 100;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.logo {
-  width: 400px;
-  justify-self: center;
-}
-
-.navigation a {
-  color: black;
-  text-decoration: none;
-}
-
-.navigation a:hover {
-  text-decoration: underline;
-}
-
-.footer {
-  display: grid;
-  grid-template-rows: auto auto;
-  row-gap: 20px;
-}
-
-.footer p {
-  font-size: 25px;
-  text-align: center;
+  justify-content: center;
 }
 
 .form {
-  border: 4px black inset;
-  justify-self: center;
+  border: 4px white solid;
   display: grid;
   row-gap: 8px;
   padding: 20px;
@@ -68,15 +17,14 @@ body {
 
 .form button {
   font-size: 20px;
-  background-color: black;
-  color: white;
+  background-color: rgb(234, 1, 1);
   padding: 10px 20px;
   transition: all 0.4s;
 }
 
 .form button:hover {
   background-color: white;
-  color: black;
+  color: rgb(234, 1, 1);
 }
 
 .form textarea,
@@ -86,5 +34,4 @@ select {
   font-size: 15px;
   padding: 5px;
   max-width: 50vw;
-  font-weight: 100;
 }

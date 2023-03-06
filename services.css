@@ -1,0 +1,77 @@
+.main-services {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: grid;
+  padding: 50px 100px;
+  row-gap: 100px;
+}
+
+.services-heading {
+  text-align: center;
+  font-size: calc(15px + 5vw);
+  font-weight: 900;
+}
+
+.venues {
+  display: grid;
+  justify-content: space-around;
+  grid-template-rows: auto auto 1fr;
+  text-align: center;
+  row-gap: 80px;
+  font-size: calc(15px + 1vw);
+}
+
+.venues-heading {
+  font-size: calc(30px + 2vw);
+  font-weight: bolder;
+  color: rgb(234, 1, 1);
+}
+
+.venues-heading-description {
+  font-size: calc(20px + 1vw);
+}
+
+.venues-cards-container {
+  display: grid;
+  row-gap: 60px;
+}
+
+.venues-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  box-shadow: 1px 1px 10px white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1vw;
+}
+
+.venues-card-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vw;
+  padding: 20px;
+}
+
+.venues-card:nth-child(2n)>div {
+  order: 2;
+}
+
+.venues-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.venues-name {
+  font-size: calc(5px + 3vw);
+  font-weight: bolder;
+}
+
+.venues-card-details {
+  font-size: calc(2px + 2vw);
+}
+
+li {
+  list-style: none;
+}
